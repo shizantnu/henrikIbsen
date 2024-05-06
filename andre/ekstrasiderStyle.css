@@ -1,0 +1,158 @@
+body{
+    background-image: url('../bilder/bakgrunbildeibsen.jpg');
+    background-size: cover;
+    font-family: "Georgia";
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: "n n n n"
+                         "m m m m"
+                         "m m m m"
+                          "f f f f";
+
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
+/*style the navbar*/
+
+/* Reset default list styles */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Align the menu items horizontally */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+/* Style the logo container */
+#logoContainer {
+    height: 80px; /* Adjust the height as necessary */
+    display: flex;
+    margin-top: -10px;
+    align-items: center; /* Aligns the logo vertically */
+    background-color: #bb5244;
+    width: 50px;
+}
+
+/* Style the logo image */
+
+/* Style the navigation links */
+nav {
+    display: flex;
+    padding: 10px 55px; /* Adjust the padding as necessary */
+}
+
+nav a {
+    color: #fff; /* White text for the links */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 18px; /* Adjust the font size as necessary */
+
+    margin-left: 60px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
+
+}
+
+nav a:hover {
+    color: #aaa; /* Light grey color on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column; /* Stack the menu items vertically on smaller screens */
+    }
+}
+
+main{
+    grid-area: m;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    grid-area: f;
+    text-align: center;}
+
+h1{
+    text-align: center;
+    font-size: 43px;
+    color: #ecebeb;
+    font-family: "Georgia", serif;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+p{
+    color: white;
+    font-size: 19px;
+    font-family: "Georgia";
+    line-height: 1.5;
+}
+
+footer{
+    background-color: #bb5244;
+    height: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.show {display: block;}
+
+
+#bioboks{
+    background-color: rgba(187, 82, 68, 0.34);
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+#bioboks p {
+    width: 90%; /* Adjust as needed */
+    margin: auto; /* Center the paragraph */
+    overflow-y: auto; /* Add scroll if the content is too much */
+    max-height: 350px; /* Adjust as needed */
+}
+#kontaktinfo {
+    color: rgba(255, 255, 255, 0.84);
+    margin-left: 50px;
+}
+
+#kontaktinfo ul {
+    list-style-type: none;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+
+#kontaktinfo {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+#kontaktinfo #kontaktinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the items to the start of the column */
+}
+
+#kontaktinfo h4 {
+    margin: 0;
+}
+
+#kontaktinfo ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.5;
+}
+
+#shiza {
+    margin-right: 250px;
+    margin-top: 90px;
+}

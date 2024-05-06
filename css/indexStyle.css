@@ -1,0 +1,200 @@
+body{
+    background-image: url('../bilder/bakgrunbildeibsen.jpg');
+    background-size: cover;
+    font-family: "Georgia";
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: "n n n n"
+                         "m m m m"
+                         "m m m m"
+                          "f f f f";
+
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
+/*style the navbar*/
+
+/* Reset default list styles */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align the menu items horizontally */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+/* Style the logo container */
+#logoContainer {
+    height: 80px; /* Adjust the height as necessary */
+    display: flex;
+    margin-top: -10px;
+    align-items: center; /* Aligns the logo vertically */
+    background-color: #bb5244;
+    width: 50px;
+}
+
+/* Style the logo image */
+
+/* Style the navigation links */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 55px; /* Adjust the padding as necessary */
+}
+
+nav a {
+    color: #fff; /* White text for the links */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 17px; /* Adjust the font size as necessary */
+    margin-left: 60px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
+
+}
+
+nav a:hover {
+    color: #aaa; /* Light grey color on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column; /* Stack the menu items vertically on smaller screens */
+    }
+}
+
+main{
+    grid-area: m;
+    padding: 20px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "i c";
+}
+
+#infoContainer{
+    grid-area: i;
+    margin-left: 5%;
+    margin-top: -25px;
+}
+
+#imageContainer{
+    grid-area: c;
+    width: 389px;
+    margin-top: -50px;
+}
+
+#imageContainer img {
+    filter: drop-shadow(4px 4px 15px grey);
+}
+
+footer{
+    grid-area: f;
+    text-align: center;}
+
+h1{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+    margin-top: 85px;
+    font-family: "Georgia";
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+p{
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 18px;
+    font-family: "Georgia";
+    line-height: 1.8;
+    width: 110%;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#kransButton{
+    border: 1px solid #bb5244;
+    background-color: #bb5244;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-color: #bb5244;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: "Georgia";
+}
+
+#kransButton:hover{
+    background-color: #b28667;
+    color: #ada7a7;
+    transition: background-color 0.3s;
+}
+
+
+footer{
+    background-color: #bb5244;
+    height: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown {
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 80px;
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    line-height: 1.5;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropbtn{
+    border: 1px solid #bb5244;
+    color: black; /* White text for the links */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 16px; /* Adjust the font size as necessary */
+    font-weight: bold; /* Makes the font bold */
+    padding: 9px 19px;
+    border-radius: 5px;
+    background-color: #bb5244;
+
+}
+
+.show {display: block;}
+
+h3{
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.ønske{
+    margin-top: -10px;
+}
+

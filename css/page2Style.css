@@ -1,0 +1,232 @@
+body{
+    background-image: url('bilder/day-normal.jpg');
+    font-family: "Times New Roman";
+    margin: 0;
+    padding: 0;
+    /*make a grid layout*/
+    display: grid;
+    grid-template-areas: "n n n n"
+                         "m m m m"
+                         "m m m m"
+                          "f f f f";
+
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
+#imageContainer{
+    position: relative;
+    margin-top:-30px;
+    margin-left: -250px;
+    width:850px;
+    height: 950px;
+    transform: rotate(1deg);
+}
+
+
+
+#imageContainer img {
+    filter: drop-shadow(4px 4px 15px rgba(53, 55, 51, 0.68));
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Align the menu items horizontally */
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Moves the links to the right side */
+    padding: 10px 55px; /* Adjust the padding as necessary */
+    z-index: 1; /* Add this line */
+    /* rest of your styles */
+    width: 1300px;
+}
+nav a {
+    color: #fff; /* White text for the links */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 21px; /* Adjust the font size as necessary */
+    margin-left: 60px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1)
+
+}
+
+
+nav a:hover {
+    color: #aaa; /* Light grey color on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: underline;
+}
+
+
+#krans{
+    z-index: 1;
+    width: 150px;
+    height: 126px;
+}
+
+#settned{
+    height: 40px;
+    border-radius: 5px;
+    background-color: #d0c263;
+    padding: 5px 8px;
+    z-index: 1;
+    font-family: "Georgia";
+   position: absolute;
+   top: 55%;
+    left: 16%;
+    transform: rotate(-1deg);
+}
+main{
+    grid-area: m;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    grid-area: f;
+    text-align: center;}
+
+h1{
+    text-align: center;
+    font-size: 43px;
+    color: #ecebeb;
+    font-family: "Georgia", serif;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+p{
+    color: white;
+    font-size: 19px;
+    font-family: "Georgia";
+    line-height: 1.5;
+}
+
+
+
+.show {display: block;}
+
+.sky{
+    top: 0;
+    padding-bottom: 76.521vh;
+    background-size: contain;
+    position: fixed;
+    left: -234%;
+    right: -184%;
+    background-repeat: no-repeat;
+    background-image: url("bilder/day-normal.jpg");
+    background-position-x: 1724px;
+}
+
+.element-background{
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-family: Titillium Web,Helvetica,sans-serif;
+    color: #FFFFFF;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    top: 0;
+    transition: background-position-x 1s;
+    transition-timing-function: cubic-bezier(.42,0,.6,1);
+    background-size: cover;
+    background-repeat: repeat-x;
+    will-change: background-position-x;
+    height: 100%;
+    left: unset;
+    right: unset;
+    width: 100%;
+    transition-duration: 750ms;
+    background-position-x: 1186.56px;
+    background-image: url("bilder/scena.png");
+}
+
+
+#popupWindow {
+    position: fixed;
+    width: 400px;
+    height: 450px;
+    opacity: 1;
+    background-color: rgba(199, 157, 22, 0.69);
+    border: 1px solid rgba(53, 55, 51, 0.68);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+#popupWindow h3 {
+   color:black;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Georgia";
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+#popupWindow p {
+    color: black;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "Georgia";
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+
+@keyframes floatIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-740px) translateY(440px);
+        opacity: 1;
+    }
+}
+.animate {
+    animation: floatIn 4s forwards;
+}
+
+#krans {
+    opacity: 0;
+}
+
+#imageButton{
+    background-color: transparent;
+    border: none;
+}
+
+#klikkHer{
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 50px;
+    left: -48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    top: 24%;
+}
+
+.arrow{
+    transform: rotate(60deg);
+}
